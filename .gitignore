@@ -1,0 +1,22 @@
+# Created by https://www.gitignore.io/api/jekyll,vim,sass
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-metadata
+
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+

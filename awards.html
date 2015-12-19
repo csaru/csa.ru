@@ -1,0 +1,22 @@
+---
+layout: default
+title: Награды
+permalink: /awards/
+---
+
+<script type="text/javascript">
+$(document).ready(function(){
+var options = {minMargin: 10, maxMargin: 35, itemSelector: ".item"};
+$(".container").rowGrid(options);
+})
+</script>
+
+<div class="container">
+{% for i in site.data.awards %}
+	<div class="item">
+		<a href="{{i.filename}}">
+			<img src="thumb.{{i.filename}}" width="{{i.width}}" height="{{i.height}}">
+		</a>
+	</div>
+{% endfor %}
+</div>
