@@ -53,20 +53,16 @@ prose:
           element: "text"
           label: "Заголовок"
     content:
-      - name: "title"
-        field:
-          element: "text"
-          label: "Заголовок"
       - name: "shortTitle"
         field:
           element: "text"
           label: "Короткий заголовок"
-          help: "Для отображения в меню"
+          help: "для отображения в меню"
       - name: "type"
         field:
           element: "select"
           label: "Категория"
-          help: "Меню, в которое добавится ссылка на странцу."
+          help: "Раздел меню, в которое добавится ссылка на страницу."
           options:
             - name: "Научная деятельность"
               value: "science"
