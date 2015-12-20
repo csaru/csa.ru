@@ -6,7 +6,7 @@ permalink: /scientific-computing-infrastructure-sci-15-workshop/
 type: activity
 subtype: workshop
 ---
-<p><span style="font-size: 14pt;"> <img src="/iccsa2015-1.jpg" /><br /><br /></span></p>
+<p><span style="font-size: 14pt;"> <img src="/iccsa2015-1.jpg" alt="iccsa-2015"/><br /><br /></span></p>
 <div><strong>Held in conjunction with the 2015 International Conference on Computational Science and Its Applications (ICCSA 2015)</strong><br /> Banff, Alberta, Canada<br /><i>June 22-25, 2015</i></div>
 <div><i> </i><a href="http://www.iccsa.org" target="_BLANK">www.iccsa.org </a><br /><br /> ICCSA 2015 is the next event in the series of highly successful International Conferences on Computational Science and Its Applications, previously held in Guimaraes - Portugal (2014), Ho Chi Minh City - Vietnam (2013), Salvador da Bahia - Brazil (2012), Santander - Spain (2011), Fukuoka - Japan (2010), Suwon - Korea (2009), Perugia - Italy (2008), Kuala Lumpur - Malaysia (2007), Glasgow - United Kingdom (2006), Singapore - Singapore(2005), Assisi - Italy (2004), Montreal - Canada (2003), and, as ICCS, in Amsterdam - The Netherlands (2002) and San Francisco - USA (2001).</div>
 <p><span style="font-size: 14pt;"><strong><span style="text-decoration: underline;">IMPORTANT DATES</span></strong><br /></span></p>

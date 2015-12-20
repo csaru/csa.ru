@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+bower install
+bundle install
+bundle exec jekyll build
+bundle exec htmlproof _site --disable-external --allow-hash-href

@@ -21,6 +21,10 @@ exclude:
  - bower.json
  - node_modules
  - .asset-cache
+ - vendor
+ - script
+ - Gemfile
+ - Gemfile.lock
 
 assets:
   sources:

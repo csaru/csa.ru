@@ -18,7 +18,7 @@ $(".container").rowGrid(options);
 {% for i in site.data.awards %}
 	<div class="item">
 		<a href="{{i.filename}}">
-			<img src="thumb.{{i.filename}}" width="{{i.width}}" height="{{i.height}}">
+			<img src="thumb.{{i.filename}}" width="{{i.width}}" height="{{i.height}}" alt="{{i.filename}}">
 		</a>
 	</div>
 {% endfor %}

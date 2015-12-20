@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Журнал TCS
-permalink: /activities/transactions-on-computational-science
+permalink: /activities/transactions-on-computational-science/
 type: activity
 ---
 
