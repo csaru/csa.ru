@@ -1,11 +1,7 @@
 ---
 layout: post
-title: !binary |-
-  0J7RgtGH0LXRgiDQviDQv9C+0LXQt9C00LrQtSDQvdCwIE5FQycxNQ==
-joomla_id: 47
-joomla_url: !binary |-
-  0L7RgtGH0LXRgi3Qvi3Qv9C+0LXQt9C00LrQtS3QvdCwLW5lYy0xNQ==
+title: "Отчет о поездке на NEC'15"
 date: 2015-10-14 11:10:10.000000000 +03:00
 ---
 <p>В сентябре в Черногории состоялся симпозиум <a href="http://nec2015.jinr.ru/">Nuclear Electronics and Computing (NEC'15)</a>, в котором приняли участие множество ученых из России и зарубежа, в том числе и наша команда. Помимо выступлений с секционными и пленарными докладами в кулуарах конференции обсуждались вопросы участия в проектах BigPanda, Dirac и GEANT4, в рамках которых до конца года планируется заключить ряд соглашений о сотрудничестве.</p>
-<p><img alt="pic-1" src="images/nec-2015/pic-1.jpg" height="270" width="172" /><img alt="pic-2" src="images/nec-2015/pic-2.jpg" height="271" width="361" /></p>
+<p><img alt="pic-1" src="/images/nec-2015/pic-1.jpg" height="270" width="172" /><img alt="pic-2" src="/images/nec-2015/pic-2.jpg" height="271" width="361" /></p>

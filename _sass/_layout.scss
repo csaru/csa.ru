@@ -26,21 +26,46 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
 
     .menu-icon {
         display: none;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+	.menu {
+		display: inline-block;
+		vertical-align: top;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
         }
-    }
+	}
+
+	.menu-title {
+		font-weight: bold;
+	}
+
+	ul {
+		list-style-type: none;
+		margin-left: 0px;
+		display: inline-block;
+
+		li {
+    	    line-height: $base-line-height;
+
+	        &:first-child {
+				line-height: 56px;
+	        }
+		}
+
+    	.page-link {
+    	    line-height: $base-line-height;
+
+    		&:hover {
+    		    color: $brand-color-2;
+    		}
+    	}
+	}
 
     @include media-query($on-palm) {
         position: absolute;
@@ -100,6 +125,19 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+
+    .page-link {
+        line-height: $base-line-height;
+
+    	&:hover {
+    	    color: $brand-color-2;
+    	}
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
 }
 
 .footer-heading {

@@ -1,7 +1,10 @@
 ---
 layout: page
-title: SCI'15
+shortTitle: SCI'15
+title: Scientific Computing Infrastructure (SCI'15) workshop
 permalink: /scientific-computing-infrastructure-sci-15-workshop/
+type: activity
+subtype: workshop
 ---
 <p><span style="font-size: 14pt;"> <img src="/iccsa2015-1.jpg" /><br /><br /></span></p>
 <div><strong>Held in conjunction with the 2015 International Conference on Computational Science and Its Applications (ICCSA 2015)</strong><br /> Banff, Alberta, Canada<br /><i>June 22-25, 2015</i></div>

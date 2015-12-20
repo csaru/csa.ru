@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Образование
-permalink: /education/
+title: ПМПУ
+permalink: /education/amcp/
+type: footer
 ---
-
-# Занятия на ПМПУ
 
 Кафедра <strong>[компьютерного моделирования и многопроцессорных систем](http://www.apmath.spbu.ru/ru/structure/depts/kmms/)</strong>.
 

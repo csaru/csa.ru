@@ -15,3 +15,17 @@ url: "http://csa.ru" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+exclude:
+ - bower_components
+ - bower.json
+ - node_modules
+ - .asset-cache
+
+assets:
+  sources:
+   - bower_components
+
+
+gems:
+ - jekyll-assets

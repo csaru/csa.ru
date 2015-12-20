@@ -1,0 +1,29 @@
+{
+  "name": "csa.ru",
+  "authors": [
+    "Ivan Gankevich <igankevich@yandex.com>"
+  ],
+  "description": "Official site of Computer Science Alliance (CSA).",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "computer",
+    "science",
+    "apmath",
+    "amcp",
+    "spbu"
+  ],
+  "license": "MIT",
+  "homepage": "http://csa.ru/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rowGrid.js": "~1.0.4"
+  }
+}
