@@ -8,6 +8,8 @@ repo_url="$REPO_URL"
 git clone "$repo_url" _oldsite >/dev/null 2>&1
 rsync -a --delete --exclude .git/ _site/ _oldsite/
 cd _oldsite
+git config user.email "bot@csa.ru"
+git config user.name "CSA bot"
 git add --all
 git commit -m "$old_commit_message"
 git push "$repo_url" >/dev/null 2>&1
