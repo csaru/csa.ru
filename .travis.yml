@@ -1,8 +1,6 @@
 language: node_js
-node_js:
- - "0.10"
-addons:
-  ssh_known_hosts: csa.ru
+before_install:
+ - rvm install 2.1
 script: "./script/cibuild"
 after_success: "./script/cideploy"
 env:
