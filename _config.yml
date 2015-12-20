@@ -33,3 +33,45 @@ assets:
 
 gems:
  - jekyll-assets
+
+
+prose:
+  ignore:
+    - bower.json
+    - .gitignore
+    - .travis.yml
+    - Gemfile
+    - _config.yml
+    - script
+    - _assets
+    - _sass
+    - css
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Заголовок"
+    content:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Заголовок"
+      - name: "shortTitle"
+        field:
+          element: "text"
+          label: "Короткий заголовок"
+          help: "Для отображения в меню"
+      - name: "type"
+        field:
+          element: "select"
+          label: "Категория"
+          help: "Меню, в которое добавится ссылка на странцу."
+          options:
+            - name: "Научная деятельность"
+              value: "science"
+            - name: "Научно-организационная деятельность"
+              value: "activity"
+            - name: "Нижнее меню (footer)"
+              value: "footer"
+

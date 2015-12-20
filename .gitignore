@@ -3,6 +3,7 @@
 .asset-cache
 Gemfile.lock
 _oldsite
+tmp
 
 # Created by https://www.gitignore.io/api/jekyll,vim,sass,bower,node
 
