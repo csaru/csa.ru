@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+old_commit_message=$(git log -1 --pretty=%B)
+repo_url="$REPO_URL"
+
+git clone "$repo_url" _oldsite >/dev/null 2>&1
+rsync -a --delete --exclude .git/ _site/ _oldsite/
+cd _oldsite
+git add --all
+git commit -m "$old_commit_message"
+git push "$repo_url" >/dev/null 2>&1
