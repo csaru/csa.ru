@@ -1,0 +1,3 @@
+- Generate list of publications from ias.spbu.ru in BibTeX. Convert them to HTML with jekyll-scholar or bibtexify.
+- Connect flickr account to link photosets.
+- English translation.

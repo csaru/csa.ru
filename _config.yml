@@ -25,6 +25,8 @@ exclude:
  - script
  - Gemfile
  - Gemfile.lock
+ - CNAME
+ - TODO.md
 
 assets:
   sources:
@@ -46,6 +48,8 @@ prose:
     - _assets
     - _sass
     - css
+    - CNAME
+    - TODO.md
   metadata:
     _posts:
       - name: "title"
