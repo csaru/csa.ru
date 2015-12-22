@@ -25,7 +25,6 @@ exclude:
  - script
  - Gemfile
  - Gemfile.lock
- - CNAME
  - TODO.md
 
 assets:
