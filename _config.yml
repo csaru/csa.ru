@@ -30,6 +30,7 @@ exclude:
 assets:
   sources:
    - bower_components
+   - _assets/javascripts
 
 
 gems:
