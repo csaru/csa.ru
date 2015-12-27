@@ -3,6 +3,9 @@ before_install:
  - rvm install 2.1
 script: "./script/cibuild"
 after_success: "./script/cideploy"
+branches:
+  only:
+  - master
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
