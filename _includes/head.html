@@ -9,6 +9,18 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <script type="text/javascript">
+  var i18n = {% site_data_to_json i18n %};
+  i18n.active_lang = i18n['{{ site.active_lang }}'];
+  function TR(s) {
+  	var x = i18n.active_lang[s];
+	if (typeof x === 'undefined') {
+		x = '';
+		console.log('No localisation for "' + s + '".');
+	}
+	return x;
+  }
+  </script>
   {% if page.secondHead %}
   	{% include {{page.secondHead}} %}
   {% endif %}

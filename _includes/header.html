@@ -32,9 +32,13 @@
 			</ul>
 			</div>
 			{% endfor %}
+			<div class="menu">
+
+{% for tongue in site.languages %}
+<a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}" href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a> |
+{% endfor %}
+			</div>
 		</div>
     </nav>
-
   </div>
-
 </header>

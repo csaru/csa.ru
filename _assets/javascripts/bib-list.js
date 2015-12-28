@@ -1956,7 +1956,7 @@ $.fn.dataTable=function(oInit){function classSettings(){this.fnRecordsTotal=func
 }else{return this.aiDisplayMaster.length}};this.fnRecordsDisplay=function(){if(this.oFeatures.bServerSide){return this._iRecordsDisplay
 }else{return this.aiDisplay.length}};this.fnDisplayEnd=function(){if(this.oFeatures.bServerSide){return this._iDisplayStart+this.aiDisplay.length
 }else{return this._iDisplayEnd}};this.sInstance=null;this.oFeatures={bPaginate:true,bLengthChange:true,bFilter:true,bSort:true,bInfo:true,bAutoWidth:true,bProcessing:false,bSortClasses:true,bStateSave:false,bServerSide:false};
-this.aanFeatures=[];this.oLanguage={sProcessing:"Processing...",sLengthMenu:"Show _MENU_ entries",sZeroRecords:"No matching records found",sInfo:"Showing _START_ to _END_ of _TOTAL_ entries",sInfoEmpty:"Showing 0 to 0 of 0 entries",sInfoFiltered:"(filtered from _MAX_ total entries)",sInfoPostFix:"",sSearch:"Search:",sUrl:"",oPaginate:{sFirst:"First",sPrevious:"Previous",sNext:"Next",sLast:"Last"}};
+this.aanFeatures=[];this.oLanguage={sProcessing:"Processing...",sLengthMenu:"Show _MENU_ entries",sZeroRecords:TR('notfound'),sInfo:TR('found'),sInfoEmpty:"",sInfoFiltered:"",sInfoPostFix:"",sSearch:TR("search")+":",sUrl:"",oPaginate:{sFirst:"First",sPrevious:"Previous",sNext:"Next",sLast:"Last"}};
 this.aoData=[];this.aiDisplay=[];this.aiDisplayMaster=[];this.aoColumns=[];this.iNextId=0;
 this.asDataSearch=[];this.oPreviousSearch={sSearch:"",bEscapeRegex:true};this.aoPreSearchCols=[];
 this.aaSorting=[[0,"asc",0]];this.aaSortingFixed=null;this.asStripClasses=[];this.fnRowCallback=null;
@@ -2648,19 +2648,19 @@ var bibtexify = (function($) {
         },
         // labels used for the different types of entries
         labels: {
-            'article': 'Journal',
-            'book': 'Book',
-            'conference': 'Conference',
-            'inbook': 'Book chapter',
-            'incollection': '',
-            'inproceedings': 'Conference',
-            'manual': 'Manual',
-            'mastersthesis': 'Thesis',
-            'misc': 'Misc',
-            'phdthesis': 'PhD Thesis',
-            'proceedings': 'Conference proceeding',
-            'techreport': 'Technical report',
-            'unpublished': 'Unpublished'}
+            'article': TR('article'),
+            'book': TR('book'),
+            'conference': TR('conference'),
+            'inbook': TR('inbook'),
+            'incollection': TR('incollection'),
+            'inproceedings': TR('inproceedings'),
+            'manual': TR('manual'),
+            'mastersthesis': TR('mastersthesis'),
+            'misc': TR('misc'),
+            'phdthesis': TR('phdthesis'),
+            'proceedings': TR('proceedings'),
+            'techreport': TR('techreport'),
+            'unpublished': TR('unpublished')}
     };
     // format a phd thesis similarly to masters thesis
     bib2html.phdthesis = bib2html.mastersthesis;
@@ -2717,9 +2717,9 @@ var bibtexify = (function($) {
         };
         var table = this.$pubTable.dataTable({ 'aaData': bibentries,
                               'aaSorting': this.options.sorting,
-                              'aoColumns': [ { "sTitle": "Year" },
-                                             { "sTitle": "Type", "sType": "type-sort", "asSorting": [ "desc", "asc" ] },
-                                             { "sTitle": "Publication", "bSortable": false }],
+                              'aoColumns': [ { "sTitle": TR('year') },
+                                             { "sTitle": TR('type'), "sType": "type-sort", "asSorting": [ "desc", "asc" ] },
+                                             { "sTitle": TR('publication'), "bSortable": false }],
                               'bPaginate': false
                             });
         if (this.options.visualization) {
