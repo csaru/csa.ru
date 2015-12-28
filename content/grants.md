@@ -4,7 +4,7 @@ permalink: /science/grants/
 title: Гранты
 type: science
 published: true
-shortTitle: ""
+shortTitle: Гранты
 ---
 
 ## Облачные технологии как путь к персональным супервычислениям
