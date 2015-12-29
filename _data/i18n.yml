@@ -1,0 +1,58 @@
+ru:
+  article: 'в журнале'
+  book: 'книга'
+  conference: 'в трудах конф.'
+  inbook: 'глава в книге'
+  incollection: 'часть книги'
+  inproceedings: 'в трудах конф.'
+  manual: 'руководство'
+  mastersthesis: 'магистерская дисс.'
+  misc: 'тезисы'
+  phdthesis: 'кандидатская дисс.'
+  proceedings: 'труды конференции'
+  techreport: 'отчет'
+  unpublished: 'неопубликованное'
+  year: 'Год'
+  type: 'Тип'
+  publication: 'Выходные данные'
+  search: 'Поиск'
+  notfound: 'Ничего не найдено'
+  found: 'Найдено _TOTAL_ публикаций.'
+  login: 'Вход на сайт'
+  awards: 'Награды'
+  news: 'Новости'
+  publications: 'Публикации'
+  menu:
+  - title: Научная деятельность
+    contentType: science
+  - title: Научно-организационная деятельность
+    contentType: activity
+en:
+  article: 'Journal'
+  book: 'Book'
+  conference: 'Conference'
+  inbook: 'Book chapter'
+  incollection: 'Book part'
+  inproceedings: 'Conference'
+  manual: 'Manual'
+  mastersthesis: 'Thesis'
+  misc: 'Misc'
+  phdthesis: 'PhD Thesis'
+  proceedings: 'Conference proceeding'
+  techreport: 'Technical report'
+  unpublished: 'Unpublished'
+  year: 'Year'
+  type: 'Type'
+  publication: 'Publication'
+  search: 'Search'
+  notfound: 'No matching records found'
+  found: 'Found _TOTAL_ entries.'
+  login: 'Login'
+  awards: 'Awards'
+  news: 'News'
+  publications: 'Publications'
+  menu:
+  - title: Science
+    contentType: science
+  - title: Activities
+    contentType: activity

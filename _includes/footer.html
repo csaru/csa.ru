@@ -1,44 +1,12 @@
 <footer class="site-footer">
-  <div class="wrapper">
-	{% for my_page in site.pages %}
-		{% if my_page.type == 'footer' %}
-			<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-		{% endif %}
-	{% endfor %}
-	<a class="page-link" href="http://prose.io/#csaru/csa.ru/">Вход на сайт</a>
-
-<!--
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
--->
-  </div>
+	<div class="wrapper">
+		{% for my_page in site.pages %}
+			{% assign my_page_lang = my_page.lang | append: '' %}
+			{% if my_page.type == 'footer' and (my_page.lang == site.active_lang or my_page_lang == '') %}
+				{% capture my_page_title %}{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}{% endcapture %}
+				<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{my_page_title}}</a>
+			{% endif %}
+		{% endfor %}
+		<a class="page-link" href="http://prose.io/#csaru/csa.ru/">{{ site.data.i18n[site.active_lang].login }}</a>
+	</div>
 </footer>

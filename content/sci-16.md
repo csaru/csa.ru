@@ -2,7 +2,10 @@
 layout: page
 title: "Scientific Computing Infrastructure (SCI'16) workshop"
 shortTitle: "SCI'16"
-permalink: "/sci-16/"
+permalink: /activities/sci-16/
+redirect_from:
+ - /scientific-computing-infrastructure-sci-16-workshop/
+ - /sci-16/
 type: activity
 subtype: workshop
 published: true

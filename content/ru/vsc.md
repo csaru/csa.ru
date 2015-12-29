@@ -3,6 +3,8 @@ layout: post
 title: Virtual Supercomputer
 permalink: /vsc/
 type: science
+lang: ru
+weight: 2
 ---
 
 <p><strong>Виртуальный суперкомпьютер (Virtual private supercomputer)</strong><br /><br />Проект поддержан грантом РФФИ 13-07-00747 "Облачные технологии как путь к персональным супервычислениям" (2013-2015)<br /><br /></p>

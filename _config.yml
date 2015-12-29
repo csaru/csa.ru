@@ -34,8 +34,9 @@ assets:
 
 
 gems:
- - jekyll-assets
-
+ - 'jekyll-assets'
+ - 'polyglot'
+ - 'jekyll-redirect-from'
 
 prose:
   ignore:
@@ -75,3 +76,6 @@ prose:
             - name: "Нижнее меню (footer)"
               value: "footer"
 
+languages: ["ru", "en"]
+default_lang: "ru"
+exclude_from_localization: ["javascript", "images", "css"]

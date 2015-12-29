@@ -17,6 +17,7 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    margin-right: 40px;
 
     &,
     &:visited {
@@ -25,7 +26,7 @@
 }
 
 .site-nav {
-    float: right;
+    float: left;
 
     .menu-icon {
         display: none;
@@ -37,8 +38,15 @@
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+//            margin-right: 20px;
         }
+	}
+
+	.lang-menu {
+		display: inline-block;
+		vertical-align: top;
+
+        margin-left: 40px;
 	}
 
 	.menu-title {
@@ -52,6 +60,8 @@
 
 		li {
     	    line-height: $base-line-height;
+            margin-right: 20px;
+			display: inline-block;
 
 	        &:first-child {
 				line-height: 56px;
@@ -65,6 +75,11 @@
     		    color: $brand-color-2;
     		}
     	}
+
+		.page-link-active {
+    	    line-height: $base-line-height;
+			font-weight: bold;
+		}
 	}
 
     @include media-query($on-palm) {

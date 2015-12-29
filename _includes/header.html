@@ -2,9 +2,12 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">
-		{{ site.title }}
-	</a>
+	{% assign site_base_url = site.baseurl | append: '/' %}
+	{% if page.url == site_base_url %}
+		<span class="site-title">{{ site.title }}</span>
+	{% else %}
+	    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+	{% endif %}
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -16,25 +19,44 @@
       </a>
 
 		<div class="trigger">
-			{% for menuItem in site.data.menu %}
+			{% for menuItem in site.data.i18n[site.active_lang].menu %}
 			<div class="menu">
 			<ul>
-				<li><span class="menu-title">{{ menuItem.title }}</span></li>
-				{% for my_page in site.pages %}
-					{% if my_page.type == menuItem.contentType %}
+				<!--<li><span class="menu-title">{{ menuItem.title }}</span></li>-->
+				{% assign sorted_pages = site.pages | sort: 'weight' %}
+				{% for my_page in sorted_pages %}
+					{% assign my_page_lang = my_page.lang | append: '' %}
+						{% if my_page.type == menuItem.contentType and (my_page.lang == site.active_lang or my_page_lang == '' or my_page.langall) %}
+						{% capture my_page_title %}{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}{% endcapture %}
+						{% if my_page_title contains 'i18n.' %}
+							{% assign key = my_page_title | replace: 'i18n.', '' %}
+							{% assign page_title = site.data.i18n[site.active_lang][key] %}
+						{% else %}
+							{% assign page_title = my_page_title %}
+						{% endif %}
+						{% assign my_page_url = my_page.url | prepend: site.baseurl %}
 						<li>
-							<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
-								{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}
+							{% if page.url == my_page_url %}
+							<span class="page-link-active">{{ page_title }}</span>
+							{% else %}
+							<a class="page-link" href="{{ my_page_url }}">
+								{{ page_title }}
 							</a>
+							{% endif %}
 						</li>
 					{% endif %}
 				{% endfor %}
 			</ul>
 			</div>
 			{% endfor %}
+			<div class="lang-menu">
+			<ul>
+				{% for tongue in site.languages %}
+				<li><a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}" href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a></li>
+				{% endfor %}
+			</ul>
+			</div>
 		</div>
     </nav>
-
   </div>
-
 </header>
