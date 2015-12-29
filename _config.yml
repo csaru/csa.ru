@@ -69,6 +69,13 @@ prose:
               value: "activity"
             - name: "Нижнее меню (footer)"
               value: "footer"
+      - name: "weight"
+        field:
+          element: "number"
+          label: "Позиция в меню (вес)"
+          help: "Чем больше вес, тем ближе к концу меню позиция."
+          value: 1000
+          type: "number"
       - name: "lang"
         field:
           element: "select"

@@ -7,6 +7,7 @@ redirect_from:
  - /scientific-computing-infrastructure-sci-15-workshop/
 type: activity
 subtype: workshop
+weight: 2001
 ---
 <p><span style="font-size: 14pt;"> <img src="/content/images/iccsa2015-1.jpg" alt="iccsa-2015"/><br /><br /></span></p>
 <div><strong>Held in conjunction with the 2015 International Conference on Computational Science and Its Applications (ICCSA 2015)</strong><br /> Banff, Alberta, Canada<br /><i>June 22-25, 2015</i></div>
