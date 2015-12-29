@@ -1,8 +1,1 @@
-{% javascript jquery.row-grid %}
 <style> /* clearfix because of floats */ .container:before, .container:after { content: ""; display: table; } .container:after { clear: both; } .item { float: left; margin-bottom: 15px; } .item img { max-width: 100%; max-height: 100%; vertical-align: bottom; } .first-item { clear: both; } /* remove margin bottom on last row */ .last-row, .last-row ~ .item { margin-bottom: 0; }</style>
-<script type="text/javascript">
-$(document).ready(function(){
-var options = {minMargin: 10, maxMargin: 35, itemSelector: ".item"};
-$(".container").rowGrid(options);
-})
-</script>

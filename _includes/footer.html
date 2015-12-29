@@ -14,3 +14,9 @@
 		</div>
 	</nav>
 </footer>
+
+{% js jquery %}
+{% js bootstrap %}
+{% if page.secondFooter %}
+	{% include {{page.secondFooter}} %}
+{% endif %}
