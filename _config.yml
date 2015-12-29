@@ -36,6 +36,7 @@ assets:
 gems:
  - 'jekyll-assets'
  - 'polyglot'
+ - 'jekyll-redirect-from'
 
 prose:
   ignore:

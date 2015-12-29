@@ -18,6 +18,15 @@ ru:
   search: 'Поиск'
   notfound: 'Ничего не найдено'
   found: 'Найдено _TOTAL_ публикаций.'
+  login: 'Вход на сайт'
+  awards: 'Награды'
+  news: 'Новости'
+  publications: 'Публикации'
+  menu:
+  - title: Научная деятельность
+    contentType: science
+  - title: Научно-организационная деятельность
+    contentType: activity
 en:
   article: 'Journal'
   book: 'Book'
@@ -38,3 +47,12 @@ en:
   search: 'Search'
   notfound: 'No matching records found'
   found: 'Found _TOTAL_ entries.'
+  login: 'Login'
+  awards: 'Awards'
+  news: 'News'
+  publications: 'Publications'
+  menu:
+  - title: Science
+    contentType: science
+  - title: Activities
+    contentType: activity

@@ -1,0 +1,37 @@
+{% if page.title %}
+	{% assign page_title = page.title %}
+{% else %}
+	{% assign page_title = site.title %}
+{% endif %}
+{% if page_title contains 'i18n.' %}
+	{% assign key = page_title | replace: 'i18n.', '' %}
+	{% assign page_title = site.data.i18n[site.active_lang][key] %}
+{% else %}
+	{% assign page_title = page_title %}
+{% endif %}
+
+<title>{{ page_title }}</title>
+<meta http-equiv="Content-Language" content="{{ site.active_lang }}">
+<link rel="alternate"
+	hreflang="{{site.default_lang}}"
+	href="http://yoursite.com{{page.permalink}}" />
+{% for lang in site.languages %}
+	{% if lang != site.default_lang %}
+		<link rel="alternate"
+			hreflang="{{lang}}"
+			href="http://yoursite.com/{{lang}}{{page.permalink}}" />
+	{% endif %}
+{% endfor %}
+
+<script type="text/javascript">
+var i18n = {% site_data_to_json i18n %};
+i18n.active_lang = i18n['{{ site.active_lang }}'];
+function TR(s) {
+	var x = i18n.active_lang[s];
+	if (typeof x === 'undefined') {
+		x = '';
+		console.log('No localisation for "' + s + '".');
+	}
+	return x;
+}
+</script>

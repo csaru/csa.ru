@@ -1,8 +1,10 @@
 ---
 layout: page
-shortTitle: SCI'15
-title: Scientific Computing Infrastructure (SCI'15) workshop
-permalink: /scientific-computing-infrastructure-sci-15-workshop/
+shortTitle: "SCI'15"
+title: "Scientific Computing Infrastructure (SCI'15) workshop"
+permalink: /activities/scientific-computing-infrastructure-sci-15-workshop/
+redirect_from:
+ - /scientific-computing-infrastructure-sci-15-workshop/
 type: activity
 subtype: workshop
 ---
