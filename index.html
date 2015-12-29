@@ -3,21 +3,24 @@ layout: default
 published: true
 ---
 
-<div class="home">
+<h1>{{ site.data.i18n[site.active_lang].news }}</h1>
 
-	<h1 class="page-heading">{{ site.data.i18n[site.active_lang].news }}</h1>
+<ul class="post-list">
+	{% for post in site.posts %}
+  		{% assign post_lang = post.lang | append: '' %}
+		{% if post_lang == '' or post_lang == site.active_lang %}
+    	<li>
+    		<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    		<span class="text-muted">
+				{% if site.active_lang == 'ru' %}
+					{{ post.date | date: "%d.%m.%Y" }}
+				{% else %}
+					{{ post.date | date: "%b %-d, %Y" }}
+				{% endif %}
+			</span>
+  			{{ post.excerpt }}
+    	</li>
+		{% endif %}
+	{% endfor %}
+</ul>
 
-	<ul class="post-list">
-		{% for post in site.posts %}
-	  		{% assign post_lang = post.lang | append: '' %}
-			{% if post_lang == '' or post_lang == site.active_lang %}
-	    	<li>
-	    		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-	    		<h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-	  			{{ post.excerpt }}
-	    	</li>
-			{% endif %}
-		{% endfor %}
-	</ul>
-
-</div>

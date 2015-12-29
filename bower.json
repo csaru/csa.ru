@@ -24,6 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "rowGrid.js": "~1.0.4"
+    "rowGrid.js": "~1.0.4",
+    "bootstrap-sass": "~3.3.6"
   }
 }

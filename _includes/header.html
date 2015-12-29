@@ -1,62 +1,68 @@
-<header class="site-header">
-
-  <div class="wrapper">
-
+{% capture site_title %}
 	{% assign site_base_url = site.baseurl | append: '/' %}
 	{% if page.url == site_base_url %}
-		<span class="site-title">{{ site.title }}</span>
+		<span class="navbar-brand">{{ site.title }}</span>
 	{% else %}
-	    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+	    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
 	{% endif %}
+{% endcapture %}
+<header>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        		</button>
+				{{ site_title }}
+			</div>
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-		<div class="trigger">
-			{% for menuItem in site.data.i18n[site.active_lang].menu %}
-			<div class="menu">
-			<ul>
-				<!--<li><span class="menu-title">{{ menuItem.title }}</span></li>-->
-				{% assign sorted_pages = site.pages | sort: 'weight' %}
-				{% for my_page in sorted_pages %}
-					{% assign my_page_lang = my_page.lang | append: '' %}
-						{% if my_page.type == menuItem.contentType and (my_page.lang == site.active_lang or my_page_lang == '' or my_page.langall) %}
-						{% capture my_page_title %}{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}{% endcapture %}
-						{% if my_page_title contains 'i18n.' %}
-							{% assign key = my_page_title | replace: 'i18n.', '' %}
-							{% assign page_title = site.data.i18n[site.active_lang][key] %}
-						{% else %}
-							{% assign page_title = my_page_title %}
-						{% endif %}
-						{% assign my_page_url = my_page.url | prepend: site.baseurl %}
-						<li>
-							{% if page.url == my_page_url %}
-							<span class="page-link-active">{{ page_title }}</span>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				{% for menuItem in site.data.i18n[site.active_lang].menu %}
+					{% assign sorted_pages = site.pages | sort: 'weight' %}
+					{% for my_page in sorted_pages %}
+						{% assign my_page_lang = my_page.lang | append: '' %}
+						{% if my_page.type == menuItem.contentType and (my_page.lang == site.active_lang or my_page_lang == '') %}
+							{% capture my_page_title %}{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}{% endcapture %}
+							{% if my_page_title contains 'i18n.' %}
+								{% assign key = my_page_title | replace: 'i18n.', '' %}
+								{% assign page_title = site.data.i18n[site.active_lang][key] %}
 							{% else %}
-							<a class="page-link" href="{{ my_page_url }}">
-								{{ page_title }}
-							</a>
+								{% assign page_title = my_page_title %}
 							{% endif %}
-						</li>
-					{% endif %}
+							{% assign my_page_url = my_page.url | prepend: site.baseurl %}
+							{% if page.url == my_page_url %}
+								<li class="active"><a href="#">{{ page_title }}</a></li>
+							{% else %}
+								<li><a href="{{ my_page_url }}">{{ page_title }}</a></li>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Language
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						{% for tongue in site.languages %}
+							{% if tongue == site.active_lang %}
+								{% assign lang_class = 'class="glyphicon glyphicon-ok"' %}
+							{% else %}
+								{% assign lang_class = 'class="glyphicon glyphicon-ok transparent"' %}
+							{% endif %}
+							{% capture lang_url %}
+								{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}
+							{% endcapture %}
+							<li><a href="{{ lang_url }}"><span {{ lang_class }}>&nbsp;</span>{{ site.data.i18n[tongue].langname }}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
 			</ul>
-			</div>
-			{% endfor %}
-			<div class="lang-menu">
-			<ul>
-				{% for tongue in site.languages %}
-				<li><a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}" href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a></li>
-				{% endfor %}
-			</ul>
-			</div>
+		</div>
 		</div>
     </nav>
-  </div>
 </header>

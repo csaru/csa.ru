@@ -1,4 +1,5 @@
 ru:
+  langname: 'Русский'
   article: 'в журнале'
   book: 'книга'
   conference: 'в трудах конф.'
@@ -28,6 +29,7 @@ ru:
   - title: Научно-организационная деятельность
     contentType: activity
 en:
+  langname: 'English'
   article: 'Journal'
   book: 'Book'
   conference: 'Conference'
