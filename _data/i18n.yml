@@ -28,6 +28,7 @@ ru:
     contentType: science
   - title: Научно-организационная деятельность
     contentType: activity
+  description: "Computational Science Alliance (CSA) создан в 2004 г. на базе Института высокопроизводительных вычислений и Информационных Систем, который в свое время был преобразован из Института Высокопроизводительных Вычислений и Баз Данных, являвшегося российским лидером в инновации современных информационных технологий на основе высокопроизводительной компьютерной техники, Учебно-научного центра по вычислительной механике Института Теплофизики Экстремальных Состояний РАН Санкт-Петербургского политехнического университета и кафедры высокопроизводительных вычислений СПбГПУ. Деятельность направлена на развитие новых технологий в использовании суперкомпьютеров в различных областях науки и техники, осуществление информационной и вычислительной поддержки государственных учреждений, исследовательских и образовательных организаций."
 en:
   langname: 'English'
   article: 'Journal'
@@ -58,3 +59,4 @@ en:
     contentType: science
   - title: Activities
     contentType: activity
+  description: "Computer Science Alliance (CSA) was founded in 2004 at the Institute of High-Performance Computing and Information Systems (former Institue of High-Performnace Computing and Databases), which was the leader in innovational information technologies and high-performance computing in Russia. Alliance activities involve developing new supercomputer technologies in various scientific and technical areas, providing informational and computational services to government agencies, research and educational organisations."
