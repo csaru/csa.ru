@@ -21,7 +21,8 @@
 			<ul>
 				<li><span class="menu-title">{{ menuItem.title }}</span></li>
 				{% for my_page in site.pages %}
-					{% if my_page.type == menuItem.contentType %}
+					{% assign my_page_lang = my_page.lang | append: '' %}
+					{% if my_page.type == menuItem.contentType and (my_page.lang == site.active_lang or my_page_lang == '') %}
 						<li>
 							<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
 								{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}
