@@ -83,6 +83,7 @@ module Jekyll
 				.gsub(/''/,'&rdquo;')
 				.gsub(/<</,'&laquo;')
 				.gsub(/>>/,'&raquo;')
+				.gsub(/\[DOI:(.*)\]/, "<a href=\"$1\">[doi]</a>")
 		end
 		def do_sort(entries)
 			ret = entries.sort_by { |entry|

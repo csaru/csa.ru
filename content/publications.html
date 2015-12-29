@@ -5,4 +5,8 @@ permalink: /science/publications/
 type: science
 weight: 1
 ---
-{% bibliography locale=ru sort_by=year,ias_id %}
+{% if site.active_lang == 'ru' %}
+	{% bibliography sort_by=year,ias_id style=csl/gost-html.csl %}
+{% else %}
+	{% bibliography sort_by=year,ias_id style=csl/acm-html.csl %}
+{% endif %}

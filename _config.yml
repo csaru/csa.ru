@@ -42,8 +42,7 @@ prose:
     - _config.yml
     - script
     - _assets
-    - _sass
-    - css
+    - csl
     - CNAME
     - TODO.md
   metadata:
