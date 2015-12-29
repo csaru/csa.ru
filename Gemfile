@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
-# development
+# base
 gem 'jekyll'
 gem 'jekyll-assets'
 gem 'json'
+gem 'jekyll-sitemap'
 
 # bibliography
 gem 'unicode'
