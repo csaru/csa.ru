@@ -5,4 +5,4 @@ npm install -g bower
 bower install
 bundle install
 bundle exec jekyll build
-bundle exec htmlproof _site --disable-external --allow-hash-href
+#bundle exec htmlproof _site --disable-external --allow-hash-href
