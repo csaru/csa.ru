@@ -10,7 +10,7 @@ type: activity
 subtype: workshop
 published: true
 weight: 2002
-real_lang: en
+real_lang: "en"
 ---
 
 <p> <span style="">Held in conjunction with </span><span style=" font-weight: bold;">the 16</span><span style="font-size: 9pt;  font-weight: bold; vertical-align: 6pt;">th </span><span style=" font-weight: bold;">International Conference on Computational Science and Its Applications (ICCSA 2016) </span><span style="">Beijing, China, July 5-8, 2016<br /> </span><a href="http://www.iccsa.org/">http://www.iccsa.org/</a></span><br /><br /> <span style=" font-weight: bold;">CALL FOR PAPERS </span> <span style="">Advancements in computing platforms research allow building complex systems which help conduct virtual experiments: setup virtual testbeds, fetch input data, run experiment, compare its output to outputs of similar experiments and organize obtained results in a convenient way for further retrieval and processing by other researchers. These systems are composed of a variety of distributed components and there are numerous ways to tie them together. The objective of the workshop is to show modern techniques on constructing such complex systems and share usage and maintenance experience. </span><br /><br /> <span style=" font-weight: bold;">TOPICS </span><br /><br /> <span style="">The topics of the SCI’16 workshop include but are not limited to: </span></p>
