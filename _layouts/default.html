@@ -1,8 +1,16 @@
 ---
 layout: compress
 ---
+
+{% assign lang = site.active_lang %}
+{% if lang == 'ru' %}
+	{% assign country = 'RU' %}
+{% else %}
+	{% assign country = 'GB' %}
+{% endif %}
+
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}-{{country}}">
 	{% include head.html %}
 	<body>
 		{% include header.html %}
