@@ -5,6 +5,7 @@ gem 'jekyll'
 gem 'jekyll-assets'
 gem 'json'
 gem 'jekyll-sitemap'
+gem 'redcarpet'
 
 # bibliography
 gem 'unicode'
