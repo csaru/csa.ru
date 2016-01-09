@@ -32,18 +32,20 @@ body {
 }
 
 // basic typography
-article {
-	p {
-		text-indent: 1em;
-		text-align: justify;
-		hyphens: auto;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		-ms-hyphens: auto;
-		margin: 0px;
-	}
-	
-	q {
-		quotes: "«" "»";
+html[lang="ru-RU"] {
+	article {
+		p {
+			text-indent: 1em;
+			text-align: justify;
+			hyphens: auto;
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			-ms-hyphens: auto;
+			margin: 0px;
+		}
+		
+		q {
+			quotes: "«" "»";
+		}
 	}
 }

@@ -2,7 +2,12 @@
 layout: compress
 ---
 
-{% assign lang = site.active_lang %}
+{% assign real_lang = page.real_lang | append: '' %}
+{% if real_lang != '' %}
+	{% assign lang = page.real_lang %}
+{% else %}
+	{% assign lang = site.active_lang %}
+{% endif %}
 {% if lang == 'ru' %}
 	{% assign country = 'RU' %}
 {% else %}
