@@ -20,7 +20,9 @@ module Jekyll
 				|f| File.extname(f) == '.bib'
 			}
 			content = files.reduce('') { |s, p| s << IO.read(File.join bibtex_path, p) }
-			do_sort BibTeX.parse(content, {})
+			do_sort BibTeX.parse(content, {
+				:filter => :latex
+			})
 		end
 		def param(name, defval)
 			@config[name] || @args[name] || defval
