@@ -1,0 +1,65 @@
+	i{color:#990000}
+	code{color:#000099}
+	var{color:#990000}
+	strong{color:#990000}
+h1{color:#2676BC}
+h2{color:#2676BC}
+h3{color:#2676BC}
+
+body{background-color:"#FFFFFF"; background-image: url("my_back.jpg"); background-repeat:repeat-y;
+ color:"#000000";margin-left:10%; margin-right:10% ; margin-width:100% margin-height:20%;
+font-family:arial, helvetica, sans-serif;} 
+
+
+a:link{color:black;background:#EEC084}
+a:visited{color:black;background:#EEC084}
+a:hover{color:lime;background:green}
+a:active{color:red;background:aqua}
+a{text-decoration:none}
+
+a.menu:link{font-family:arial;color:black;background:transparent}
+a.menu:visited{font-family:arial;color:black;background:transparent}
+a.menu:hover{font-family:arial;color:red;background:transparent}
+a.menu:active{font-family:arial;color:red;background:transparent}
+a.menu{text-decoration:none}
+
+
+
+a.image:link{background:transparent}
+a.image:visited{background:transparent}
+a.image:active{background:transparent}
+a.image:hover{background:transparent}
+
+table{width:100%;background:#EEC084;}
+td{text-align:left;border:2px solid black;}
+
+/*  Дизайн ленточного меню */
+div.ribbonwide{text-align:center;width:100%;}
+div.ribbon{text-align:center;width:100%;margin-left:auto;margin-right:auto;}
+div.ribbonpad{padding:0.2em 0;}
+
+div ribbon p{margin -2px 5px 0 5px; font-family:Arial;sans-serif;font-size:14px;text-align:center;font-weighr:bold;}
+div ribbon a{margin 0 6px;text-decoration:none;width:750px;}
+div.ribbon span{padding:0 30px;margin:0;}
+div.ribbon a:link, div.ribbon a:visited,div.ribbon a:active {color:black;background:#EEC084;}
+div.ribbon a:hover{color:red;background:#ffce63;}
+/* Конец дизайна меню */
+
+#banner:hover, #banner:visited, #banner:focus, #banner:link{
+	color: transparent;
+	background: none;
+}
+
+td.head-cell {
+	color: #cccccc;
+	padding: 5px;
+}
+td.data-cell {
+	color: #e0e0e0;
+	padding: 5px;
+}
+table.data-table {
+	border: 0px;
+	border-spacing: 1px;
+	width: 500px;
+}

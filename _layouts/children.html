@@ -1,0 +1,23 @@
+---
+layout: compress
+author: Bogdanova Olga A. О.А.Богданова Ольга Александровна
+head: children-head.html
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+	{% include head.html %}
+	{% if page.itemtype %}
+	    {% assign page_itemtype = page.itemtype %}
+	{% else %}
+	    {% assign page_itemtype = "http://schema.org/WebPage" %}
+	{% endif %}
+	<body itemscope itemtype="{{ page_itemtype }}">
+		{% include children-header.html %}
+		<div class="page-content">
+			<div class="wrapper">
+				{{ content }}
+			</div>
+		</div>
+		{% include children-footer.html %}
+	</body>
+</html>

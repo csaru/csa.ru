@@ -1,0 +1,104 @@
+FONT.T {
+	FONT-WEIGHT: bold; FONT-SIZE: 130%; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: normal; HEIGHT: auto
+}
+FONT.T1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%; COLOR: blue; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: normal; HEIGHT: auto; TEXT-DECORATION: none
+}
+FONT.T2 {
+	FONT-SIZE: 110%; COLOR: red; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: normal; HEIGHT: auto; TEXT-DECORATION: none
+}
+FONT.lek {
+	FONT-SIZE: 10pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: normal; HEIGHT: auto; TEXT-DECORATION: none
+}
+
+FONT.F {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Helvetica, Arial, sans-serif; LETTER-SPACING: normal; HEIGHT: auto
+}
+FONT.F_ {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Helvetica, Arial, sans-serif; LETTER-SPACING: normal; HEIGHT: auto; TEXT-DECORATION: underline 
+}
+FONT.F1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Tahoma, Helvetica, sans-serif; LETTER-SPACING: normal; HEIGHT: auto
+}
+A.intext {
+	FONT-SIZE: 11pt; COLOR: #4a4b90; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.intext:hover {
+	FONT-SIZE: 11pt; COLOR: #ff0000; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.intext:active {
+	FONT-SIZE: 11pt; COLOR: #ff0000; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.intextb {
+	FONT-SIZE: 13pt; COLOR: #4a4b90; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.intextb:hover {
+	FONT-SIZE: 13pt; COLOR: #ff0000; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.intextb:active {
+	FONT-SIZE: 13pt; COLOR: #ff0000; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+LI {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: normal; HEIGHT: auto
+}
+A.ol:link {
+	FONT-SIZE: 11px; COLOR: #000080; TEXT-DECORATION: none
+}
+A.ol:visited {
+	FONT-SIZE: 11px; COLOR: #333399; TEXT-DECORATION: none
+}
+A.ol:active {
+	FONT-SIZE: 11px; COLOR: blue; TEXT-DECORATION: none
+}
+A.ol:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+
+A.forum_small {
+	FONT-SIZE: 8pt; COLOR: #4a4b90; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.forum_small:hover {
+	FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.forum_small:active {
+	FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+
+A.forum_big {
+	FONT-SIZE: 11pt; FONT-WEIGHT: bold; COLOR: #4a4b90; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.forum_big:hover {
+	FONT-SIZE: 11pt; COLOR: #ff0000; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+A.forum_big:active {
+	FONT-SIZE: 11pt; COLOR: #ff0000; FONT-FAMILY: Arial, sans-serif; HEIGHT: auto; TEXT-DECORATION: underline
+}
+td.forum_headers {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #ffffff; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; LETTER-SPACING: normal; HEIGHT: auto;background-color : #aaaaaa;
+         
+}
+td.forum_serv {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; LETTER-SPACING: normal; HEIGHT: auto;background-color : #dddddd;
+}
+td.forum_main {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; LETTER-SPACING: normal; HEIGHT: auto;background-color : #ffffff;
+}
+td.forum_total {
+	background-color : #eeeeee; 
+}
+
+FONT.forum_serv {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; LETTER-SPACING: normal; HEIGHT: auto
+}
+
+FONT.forum_headers {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: red; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: normal; HEIGHT: auto; TEXT-DECORATION: none
+}
+FONT.forum_copyright {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; LETTER-SPACING: normal; HEIGHT: auto
+}
+
+FONT.forum_big {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; LETTER-SPACING: normal; HEIGHT: auto
+}
+         
