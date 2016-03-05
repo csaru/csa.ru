@@ -12,14 +12,10 @@
 
 <title>{{ page_title }}</title>
 <meta http-equiv="Content-Language" content="{{ site.active_lang }}">
-<link rel="alternate"
-	hreflang="{{site.default_lang}}"
-	href="http://yoursite.com{{page.permalink}}" />
+<link rel="alternate" hreflang="{{site.default_lang}}" href="{{site.url}}{{page.permalink}}" />
 {% for lang in site.languages %}
 	{% if lang != site.default_lang %}
-		<link rel="alternate"
-			hreflang="{{lang}}"
-			href="http://yoursite.com/{{lang}}{{page.permalink}}" />
+		<link rel="alternate" hreflang="{{lang}}" href="{{site.url}}/{{lang}}{{page.permalink}}" />
 	{% endif %}
 {% endfor %}
 
