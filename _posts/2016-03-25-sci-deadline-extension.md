@@ -1,7 +1,9 @@
 ---
 published: true
 title: SCI deadline extension
+layout: post
 ---
+
 
 
 
