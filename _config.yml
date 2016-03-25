@@ -51,10 +51,10 @@ prose:
     - TODO.md
   metadata:
     _posts:
-      - name: "title"
+      - name: "layout"
         field:
-          element: "text"
-          label: "Заголовок"
+          element: "hidden"
+          value: "post"
     content:
       - name: "shortTitle"
         field:
