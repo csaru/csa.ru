@@ -22,3 +22,4 @@ gem 'jekyll-redirect-from'
 
 # deployment
 gem 'html-proofer'
+gem 'rake'
