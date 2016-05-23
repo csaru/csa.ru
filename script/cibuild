@@ -6,4 +6,3 @@ bower install
 bundle install
 bundle exec rake csa
 bundle exec jekyll build
-#bundle exec htmlproof _site --disable-external --allow-hash-href
