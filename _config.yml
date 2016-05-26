@@ -1,0 +1,119 @@
+---
+title: Computer Science Alliance
+baseurl: ''
+url: http://csa.ru
+id: csa
+markdown: redcarpet
+redcarpet:
+  extensions:
+  - quote
+exclude:
+- bower_components
+- bower.json
+- node_modules
+- ".asset-cache"
+- vendor
+- script
+- Gemfile
+- Gemfile.lock
+- TODO.md
+- Rakefile
+assets:
+  sources:
+  - bower_components/jquery/dist
+  - bower_components/rowGrid.js
+  - bower_components/bootstrap-sass/assets/fonts
+  - bower_components/bootstrap-sass/assets/images
+  - bower_components/bootstrap-sass/assets/javascripts
+  - bower_components/bootstrap-sass/assets/stylesheets
+gems:
+- jekyll-assets
+- polyglot
+- jekyll-redirect-from
+- jekyll-sitemap
+- redcarpet
+prose:
+  ignore:
+  - bower.json
+  - ".gitignore"
+  - ".travis.yml"
+  - Gemfile
+  - _config.yml
+  - script
+  - _assets
+  - csl
+  - CNAME
+  - TODO.md
+  metadata:
+    _posts:
+    - name: layout
+      field:
+        element: hidden
+        value: post
+    - name: published
+      field:
+        element: hidden
+        value: 'true'
+    content:
+    - name: shortTitle
+      field:
+        element: text
+        label: "Короткий заголовок"
+        help: "для отображения в меню"
+    - name: type
+      field:
+        element: select
+        label: "Категория"
+        help: "Раздел меню, в которое добавится ссылка на страницу."
+        options:
+        - name: "Научная деятельность (верхнее меню, слева)"
+          value: science
+        - name: "Научно-организационная деятельность (верхнее меню, справа)"
+          value: activity
+        - name: "Нижнее меню (footer)"
+          value: footer
+    - name: weight
+      field:
+        element: number
+        label: "Позиция в меню (вес)"
+        help: "Чем больше вес, тем ближе к концу меню позиция."
+        value: 1000
+        type: number
+    - name: lang
+      field:
+        element: select
+        label: "Версия сайта"
+        help: "Локализованная версия сайта, на которой отобразится страница. Страницы
+          без указания языка отобразятся одновременно на русской и английской версии
+          сайта."
+        placeholder: "Обе"
+        options:
+        - name: "Обе"
+          value: ''
+        - name: "Русская"
+          value: ru
+        - name: "Английская"
+          value: en
+    - name: real_lang
+      field:
+        element: select
+        label: "Язык страницы"
+        help: "Язык, на котором написан текст на странице. Для разных языков применяется
+          разное форматирование различных элементов текста (отступов, кавычек, переносов
+          слов и т.п.)."
+        placeholder: "Совпадает с версией сайта"
+        options:
+        - name: "Совпадает с версией сайта"
+          value: ''
+        - name: "Русский"
+          value: ru
+        - name: "Английский"
+          value: en
+languages:
+- ru
+- en
+default_lang: ru
+exclude_from_localization:
+- javascript
+- images
+- css
