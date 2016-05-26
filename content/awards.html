@@ -6,14 +6,15 @@ type: science
 secondHead: awards-header.html
 secondFooter: awards-footer.html
 weight: 1003
+identifier: apmath
 ---
 
 <div class="container">
 {% assign awards_dir = '/content/awards' %}
 {% for i in site.data.awards %}
 	<div class="item">
-		<a href="{{awards_dir}}/{{i.filename}}">
-			<img src="{{awards_dir}}/thumb.{{i.filename}}" width="{{i.width}}" height="{{i.height}}" alt="{{i.filename}}">
+		<a href="{{site.baseurl}}{{awards_dir}}/{{i.filename}}">
+			<img src="{{site.baseurl}}{{awards_dir}}/thumb.{{i.filename}}" width="{{i.width}}" height="{{i.height}}" alt="{{i.filename}}">
 		</a>
 	</div>
 {% endfor %}

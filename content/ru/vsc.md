@@ -4,7 +4,6 @@ title: Virtual Supercomputer
 permalink: /vsc/
 type: science
 lang: ru
-identifier: apmath
 weight: 1001
 ---
 

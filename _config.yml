@@ -11,7 +11,7 @@ exclude:
 - bower_components
 - bower.json
 - node_modules
-- .asset-cache
+- ".asset-cache"
 - vendor
 - script
 - Gemfile
@@ -26,6 +26,7 @@ assets:
   - bower_components/bootstrap-sass/assets/images
   - bower_components/bootstrap-sass/assets/javascripts
   - bower_components/bootstrap-sass/assets/stylesheets
+  - bower_components/bootstrap-sass/assets/fonts/bootstrap
 gems:
 - jekyll-assets
 - polyglot
@@ -35,8 +36,8 @@ gems:
 prose:
   ignore:
   - bower.json
-  - .gitignore
-  - .travis.yml
+  - ".gitignore"
+  - ".travis.yml"
   - Gemfile
   - _config.yml
   - script
@@ -58,56 +59,56 @@ prose:
     - name: shortTitle
       field:
         element: text
-        label: Короткий заголовок
-        help: для отображения в меню
+        label: "Короткий заголовок"
+        help: "для отображения в меню"
     - name: type
       field:
         element: select
-        label: Категория
-        help: Раздел меню, в которое добавится ссылка на страницу.
+        label: "Категория"
+        help: "Раздел меню, в которое добавится ссылка на страницу."
         options:
-        - name: Научная деятельность (верхнее меню, слева)
+        - name: "Научная деятельность (верхнее меню, слева)"
           value: science
-        - name: Научно-организационная деятельность (верхнее меню, справа)
+        - name: "Научно-организационная деятельность (верхнее меню, справа)"
           value: activity
-        - name: Нижнее меню (footer)
+        - name: "Нижнее меню (footer)"
           value: footer
     - name: weight
       field:
         element: number
-        label: Позиция в меню (вес)
-        help: Чем больше вес, тем ближе к концу меню позиция.
+        label: "Позиция в меню (вес)"
+        help: "Чем больше вес, тем ближе к концу меню позиция."
         value: 1000
         type: number
     - name: lang
       field:
         element: select
-        label: Версия сайта
-        help: Локализованная версия сайта, на которой отобразится страница. Страницы
+        label: "Версия сайта"
+        help: "Локализованная версия сайта, на которой отобразится страница. Страницы
           без указания языка отобразятся одновременно на русской и английской версии
-          сайта.
-        placeholder: Обе
+          сайта."
+        placeholder: "Обе"
         options:
-        - name: Обе
+        - name: "Обе"
           value: ''
-        - name: Русская
+        - name: "Русская"
           value: ru
-        - name: Английская
+        - name: "Английская"
           value: en
     - name: real_lang
       field:
         element: select
-        label: Язык страницы
-        help: Язык, на котором написан текст на странице. Для разных языков применяется
+        label: "Язык страницы"
+        help: "Язык, на котором написан текст на странице. Для разных языков применяется
           разное форматирование различных элементов текста (отступов, кавычек, переносов
-          слов и т.п.).
-        placeholder: Совпадает с версией сайта
+          слов и т.п.)."
+        placeholder: "Совпадает с версией сайта"
         options:
-        - name: Совпадает с версией сайта
+        - name: "Совпадает с версией сайта"
           value: ''
-        - name: Русский
+        - name: "Русский"
           value: ru
-        - name: Английский
+        - name: "Английский"
           value: en
 languages:
 - ru
