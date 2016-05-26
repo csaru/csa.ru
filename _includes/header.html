@@ -24,8 +24,24 @@
 				{% for menuItem in site.data.i18n[site.active_lang].menu %}
 					{% assign sorted_pages = site.pages | sort: 'weight' %}
 					{% for my_page in sorted_pages %}
+						{% assign ok1 = false %}
+						{% assign ok2 = false %}
 						{% assign my_page_lang = my_page.lang | append: '' %}
-						{% if my_page.type == menuItem.contentType and (my_page.lang == site.active_lang or my_page_lang == '') %}
+						{% if my_page.type == menuItem.contentType %}
+							{% if my_page_lang == site.active_lang %}
+								{% assign ok1 = true %}
+							{% endif %}
+							{% if my_page_lang == '' %}
+								{% assign ok1 = true %}
+							{% endif %}
+						{% endif %}
+						{% if site.identifier == 'csa' %}
+							{% assign ok2 = true %}
+						{% endif %}
+						{% if site.identifier == 'apmath' and my_page.identifier == 'apmath' %}
+							{% assign ok2 = true %}
+						{% endif %}
+						{% if ok1 and ok2 %}
 							{% capture my_page_title %}{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}{% endcapture %}
 							{% if my_page_title contains 'i18n.' %}
 								{% assign key = my_page_title | replace: 'i18n.', '' %}
