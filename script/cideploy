@@ -20,12 +20,14 @@ git push "$repo_url" >/dev/null 2>&1
 # deploy to apmath
 cd $root_dir
 keyfile=/tmp/apmath-id-rsa 
-echo 'DirectoryIndex index.html' > _site-apmath/.htaccess
 chmod 400 $keyfile
+echo "StrictHostKeyChecking no" >> $HOME/.ssh/config
+echo "IdentityFile $keyfile" >> $HOME/.ssh/config
 rm -f _site-apmath/sitemap.xml
 rm -f _site-apmath/CNAME
 rm -f _site-apmath/en/sitemap.xml
 rm -f _site-apmath/en/CNAME
 rm -rf _site-apmath/children
 rm -rf _site-apmath/en/children
-rsync -az --delete -e "ssh -i $keyfile" _site-apmath/ "$APMATH_URL"
+echo 'DirectoryIndex index.html' > _site-apmath/.htaccess
+rsync -az --delete _site-apmath/ "$APMATH_URL"
