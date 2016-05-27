@@ -5,7 +5,6 @@ title: Гранты
 type: science
 lang: ru
 weight: 1002
-identifier: apmath
 ---
 
 ### Виртуальный суперкомпьютер как инструмент для решения комплексных проблем
