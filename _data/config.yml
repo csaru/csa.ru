@@ -24,7 +24,6 @@ assets:
    - bower_components/bootstrap-sass/assets/images
    - bower_components/bootstrap-sass/assets/javascripts
    - bower_components/bootstrap-sass/assets/stylesheets
-   - bower_components/bootstrap-sass/assets/fonts/bootstrap
 
 gems:
  - 'jekyll-assets'

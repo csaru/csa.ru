@@ -30,4 +30,6 @@ rm -f _site-apmath/en/CNAME
 rm -rf _site-apmath/children
 rm -rf _site-apmath/en/children
 echo 'DirectoryIndex index.html' > _site-apmath/.htaccess
+# workaround for a bug in jekyll-assets
+rsync -a bower_components/bootstrap-sass/assets/fonts/ _site-apmath/assets/
 rsync -az --delete _site-apmath/ "$APMATH_URL"
