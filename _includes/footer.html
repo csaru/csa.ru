@@ -2,14 +2,16 @@
 	<nav class="navbar">
 		<div class="container">
 			<ul class="nav">
-				{% for my_page in site.pages %}
-					{% assign my_page_lang = my_page.lang | append: '' %}
-					{% if my_page.type == 'footer' and (my_page.lang == site.active_lang or my_page_lang == '') %}
-						{% capture my_page_title %}{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}{% endcapture %}
-						<li class="navbar-text"><a href="{{ my_page.url | prepend: site.baseurl }}">{{my_page_title}}</a></li>
-					{% endif %}
-				{% endfor %}
-				<li class="navbar-text"><a href="http://prose.io/#csaru/csa.ru/">{{ site.data.i18n[site.active_lang].login }}</a></li>
+				{% if site.identifier != 'apmath' %}
+					{% for my_page in site.pages %}
+						{% assign my_page_lang = my_page.lang | append: '' %}
+						{% if my_page.type == 'footer' and (my_page.lang == site.active_lang or my_page_lang == '') %}
+							{% capture my_page_title %}{% if my_page.shortTitle %}{{ my_page.shortTitle }}{% else %}{{ my_page.title }}{% endif %}{% endcapture %}
+							<li class="navbar-text"><a href="{{ my_page.url | prepend: site.baseurl }}">{{my_page_title}}</a></li>
+						{% endif %}
+					{% endfor %}
+					<li class="navbar-text"><a href="http://prose.io/#csaru/csa.ru/">{{ site.data.i18n[site.active_lang].login }}</a></li>
+				{% endif %}
 			</ul>
 		</div>
 	</nav>
