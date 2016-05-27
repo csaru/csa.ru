@@ -2,14 +2,30 @@
 
 set -e
 
+root_dir=$(pwd)
+
+# deploy to csa.ru
+cd $root_dir
 old_commit_message=$(git log -1 --pretty=%B)
 repo_url="$REPO_URL"
-
 git clone "$repo_url" _oldsite >/dev/null 2>&1
-rsync -a --delete --exclude .git/ _site/ _oldsite/
+rsync -a --delete --exclude .git/ _site-csa/ _oldsite/
 cd _oldsite
 git config user.email "bot@csa.ru"
 git config user.name "CSA bot"
 git add --all
 git commit -m "$old_commit_message"
 git push "$repo_url" >/dev/null 2>&1
+
+# deploy to apmath
+cd $root_dir
+keyfile=/tmp/apmath-id-rsa 
+echo 'DirectoryIndex index.html' > _site-apmath/.htaccess
+chmod 400 $keyfile
+rm -f _site-apmath/sitemap.xml
+rm -f _site-apmath/CNAME
+rm -f _site-apmath/en/sitemap.xml
+rm -f _site-apmath/en/CNAME
+rm -rf _site-apmath/children
+rm -rf _site-apmath/en/children
+rsync -az --delete -e "ssh -i $keyfile" _site-apmath/ "$APMATH_URL"

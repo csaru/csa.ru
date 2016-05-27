@@ -1,8 +1,14 @@
 #!/bin/sh
 
+build_site() {
+bundle exec rake $1
+bundle exec jekyll build
+mv _site _site-$1
+}
+
 set -e
 npm install -g bower
 bower install
 bundle install
-bundle exec rake csa
-bundle exec jekyll build
+build_site csa
+build_site apmath

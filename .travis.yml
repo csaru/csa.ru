@@ -1,7 +1,8 @@
 language: node_js
 before_install:
- - openssl aes-256-cbc -K $encrypted_1074786f9eb1_key -iv $encrypted_1074786f9eb1_iv -in script/apmath-id-rsa -out /tmp/apmath-id-rsa -d
- - rvm install 2.1
+- openssl aes-256-cbc -K $encrypted_1074786f9eb1_key -iv $encrypted_1074786f9eb1_iv
+  -in script/apmath-id-rsa -out /tmp/apmath-id-rsa -d
+- rvm install 2.1
 script: "./script/cibuild"
 after_success: "./script/cideploy"
 branches:
@@ -12,3 +13,4 @@ env:
   - JEKYLL_ENV=production
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - secure: sViph8Zdu27fLNfEVn1ZGsZqf3iSbY4SxegC/vO1zcR5F8Mru1yXq2bYLEyjVIJPTm/welukb0fuhnpzqgHAGeMU/WBb8gq2SLNng3vHdG1Kydkit7A7kHP8eGU/il3ueKEU7wP79wGSAOKsnGtWYt8yqMGC1AycWVFngzBDdzqUsrgVn8AMRpy2SH3uSYi0wA+wOYZMVPT4uWq9lbdoayMgY7AU4wK9gqZj6txt4ofFnsVkROG1RpdmCbTwto8rd5RQ0QWV7q16Nv1dwtfgRNrnlIA2t4W7DFGFS2Mu8lEosat023GJ1IgdNpMFf/U5psOLpXnevLBORGLoXGVoWKiTCx1/70lThD2PinsJVbY9b50keCaIWZLU2dAeLLD5uZcRbW+CwxAuKpa9sE9yKLN7/Zsf3fukXiVzHLahmkUUkL7WYHvNapVO+nXf6fMyKfytY8C3kd43CJpj9NLzCjfbPAZMSaxTWPubWRVnVlw/ddUncGq5YCngbY7CB2/0rrICAhxbKHkeLPwZrm12Hqi6Ji4qd/2rC+8Sj2aO4P0miqSUV7XTTq6cAQHitBA8MunuDqE96vio5hKaFzSeAcOnczb/xFgbdBm3MNkuQqSJtMG3W/KRp3t0D1QAi9WXed5Ry5S58ZnkWP873WKoKW1o/er/tjMVsFa0slClRGU=
+  - secure: kcFQm9pu0XFy+uZr6FV8hR7Ga/PbotfG/zJc/SE5v4ohJfe3KQiTxbzd8jfCPqWJYS7+R60miaPbe/ZThFpJs/zrwJNOSVEHq8v2ZmSMG4h2dhSRzqjkUWxFlDJ9rJDHApLXm7n/DMIasdAP/4e97UhvOPrlMgjsjN3WY20uTlT+De/dbfWCjcHhtXmo+hrLMjckzH05j69lce1vbBmbW4XTuN87UigzAf/kNRYIKmJKN32nC0vxClT+iTDk7sAssP5Lb3yBzRk0iOnm4rVxRE4ko7KqPKt7EHOGdxFsJzqTYGzgALJ9Cs/c7YnuxP7nyOOHULy74Nz+9oZVUKIqB4YM/wafclCqWAC0Tf+qveDWUDL0FSzcAcGwkJYtvMojtouHEgzxvMOcCJ09Lz4fujkyahFTzlOu4Wz12Q0AUFzYlowj4VoMkUAjfJW1OzRUuM76UHmlwF0bmvOSWXlYGB55hfdeD9d6S26kVZ3sJ/W5g/ZKXw4tdAp2eWmsju2rZn3yngjjhZGa6tS4Jn99Q1B0lro9zaO+3LUO+dB7sCw7XzAJA3D4c7K6MYe3FuXDVubXW2cGwWQHiJ293njlZOgMngVgxmdXzWEGlGErDkgBxt2cpDucLxyr4GTbpm9Gqz8lIKdYbYl5vm/L0JcsTo9EX5uydY5dIU4SkJwjHug=
