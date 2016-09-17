@@ -17,6 +17,7 @@ gem 'csl'
 gem 'csl-styles'
 
 # i18n
+gem 'polyglot'
 gem 'jekyll-polyglot'
 gem 'jekyll-redirect-from'
 
