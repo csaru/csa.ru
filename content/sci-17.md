@@ -1,7 +1,7 @@
 ---
 type: science
 weight: 1000
-published: false
+published: true
 ---
 ## A New Post
 
