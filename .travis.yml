@@ -2,7 +2,7 @@ language: node_js
 before_install:
 - openssl aes-256-cbc -K $encrypted_1074786f9eb1_key -iv $encrypted_1074786f9eb1_iv
   -in script/apmath-id-rsa -out /tmp/apmath-id-rsa -d
-- rvm install 2.2
+- rvm install 2.2.2
 script: "./script/cibuild"
 after_success: "./script/cideploy"
 branches:
