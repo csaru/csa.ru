@@ -3,6 +3,8 @@ markdown: redcarpet
 redcarpet:
   extensions:
    - quote
+   - strikethrough
+   - underline
 
 exclude:
  - bower_components

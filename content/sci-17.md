@@ -1,24 +1,84 @@
 ---
-type: science
-weight: 1000
+layout: page
+title: "Scientific Computing Infrastructure (SCI'17) workshop"
+shortTitle: "SCI'17"
+permalink: "/activities/sci-17/"
+type: activity
+subtype: workshop
 published: true
+weight: 2003
+real_lang: en
+lang: ""
+identifier: apmath
 ---
-## A New Post
 
-<p> <span style="">Held in conjunction with </span><span style=" font-weight: bold;">the 17</span><span style="font-size: 9pt;  font-weight: bold; vertical-align: 6pt;">th </span><span style=" font-weight: bold;">International Conference on Computational Science and Its Applications (ICCSA 2017) </span><span style="">Trieste, Italy, July 3-6, 2017<br /> </span><a href="http://www.iccsa.org/">http://www.iccsa.org/</a></span><br /><br /> <span style=" font-weight: bold;">CALL FOR PAPERS </span> <span style="">Advancements in computing platforms research allow building complex systems which help conduct virtual experiments: setup virtual testbeds, fetch input data, run experiment, compare its output to outputs of similar experiments and organize obtained results in a convenient way for further retrieval and processing by other researchers. These systems are composed of a variety of distributed components and there are numerous ways to tie them together. The objective of the workshop is to show modern techniques on constructing such complex systems and share usage and maintenance experience. </span><br /><br /> <span style=" font-weight: bold;">TOPICS </span><br /><br /> <span style="">The topics of the SCI’16 workshop include but are not limited to: </span></p>
-<ul>
-	<li>Distributed, grid and cloud information systems;</li>
-	<li>Distributed system and application performance monitoring;</li>
-	<li>Virtualization, application containers and delivery techniques;</li>
-	<li>Distributed databases, key-value stores and parallel file systems for high-performance computing;</li>
-	<li>Scientific and general workflow systems, scientific virtual experiment tracking and data provenance;</li>
-	<li>Application portability for heterogeneous and homogeneous distributed computer systems.</li>
-</ul>
-<p>Accepted papers will be published by Springer-Verlag in the Conference proceedings that will be indexed in Scopus and Web of Science.</p>
-<p><span style=" font-weight: bold;"><span style=" font-weight: bold;"><span style=""><strong><span style="text-decoration: underline;">IMPORTANT DATES</span></strong></span></span></span>
-<p><span style=" font-weight: bold; font-style: italic;"><span style=" font-weight: bold; font-style: italic;"><strike>March 20, 2016</strike> - extended till April 10,2016</span>: <span style=" font-weight: bold; font-style: italic;">Submission deadline</span><br /><strong><strike>April 20, 2016</strike> - extended till April 28, 2016</strong>: Notification of Acceptance and Early-bird Registration starts.&nbsp;<br /><strong>May 15, 2016: Early-bird Registration ends.&nbsp;</strong><br /><strong>May 15, 2016: Submission deadline for the final version of the Papers&nbsp;</strong><br /><strong>July 4-7, 2016: ICCSA 2016 Conference</strong> </span></p>
-<p><span style=""><strong><span style="text-decoration: underline;">PAPER SUBMISSION</span></strong><br /> To submit a paper, please connect to the Submission site from the link provided at the ICCSA 2016 web site: &nbsp;<a href="http://ess.iccsa.org" target="_BLANK">http://ess.iccsa.org</a>. Only papers submitted through the electronic system and strictly adhering to the relevant format will be considered for reviewing and publication.</span></p>
-<p><span style="text-decoration: underline;"><span style="">The submission must fall into the following category: Scientific Computing Infrastructure (SCI 2016) workshop paper.</span></span></p>
-<p><span style="">The submitted paper must be between 10 to 16 pages long for LNCS publication and should be formatted according to the LNCS rules, respectively. Please consult the URL &nbsp; <a href="http://www.iccsa.org/authors-instructions" target="_BLANK"> </a><a href="http://www.iccsa.org/authors-instructions">http://www.iccsa.org/authors-instructions</a> for formatting information and templates. Each paper must deal with original and unpublished work, not submitted for publication elsewhere (copyright problems fall entirely under responsibility of the authors). Each paper will be reviewed by at least three experts in the relevant field, ensuring the publication of only top quality contributions.<br /> When a paper is accepted at least one of the authors has to register to the Conference and orally present the paper at the Workshop. Accepted papers will be published by Springer-Verlag in the Conference proceedings. Each participant will receive the electronic copy of all the proceeding volumes (LNCS) on a USB key. For a selected number of top quality papers, after the Conference, the authors will be requested to extend the paper in order to be published as special issues in Transactions on Computational Science.</span></p>
-<p><span style="">ORGANIZATION<br /> ----------------------<br /> Prof. Dr. Alexander Bogdanov, </span><span style=" font-style: italic;"><a href="mailto:bogdanov@csa.ru">bogdanov@csa.ru</a></span><span style=" font-style: italic;"><br /></span><span style="">Dr. Elena Stankova, </span><span style=" font-style: italic;"><a href="mailto:elenastankova@yandex.ru">elenastankova@yandex.ru</a></span><span style=" font-style: italic;"><br /></span><span style="">Dr. Vladimir Korkhov, </span><span style=" font-style: italic;"><a href="mailto:vladimir@csa.ru">vladimir@csa.ru</a></span><span style=" font-style: italic;"><br /></span><span style="">Saint-Petersburg State University, Russia </span><br /><br /></p>
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Held in conjunction with **the 17<sup>th</sup>International Conference on Computational Science and Its Applications (ICCSA 2017)**<br/>
+Trieste, Italy, July 3-6, 2017<br/>
+<http://www.iccsa.org/>
+
+### Call for papers
+
+Advancements in computing platforms research allow building complex systems
+which help conduct virtual experiments: setup virtual testbeds, fetch input
+data, run experiment, compare its output to outputs of similar experiments and
+organize obtained results in a convenient way for further retrieval and
+processing by other researchers. These systems are composed of a variety of
+distributed components and there are numerous ways to tie them together. The
+objective of the workshop is to show modern techniques on constructing such
+complex systems and share usage and maintenance experience.
+
+### Topics 
+
+The topics of the SCI’17 workshop include but are not limited to:
+
+- Distributed, grid and cloud information systems;
+- Distributed system and application performance monitoring;
+- Virtualization, application containers and delivery techniques;
+- Distributed databases, key-value stores and parallel file systems for high-performance computing;
+- Scientific and general workflow systems, scientific virtual experiment tracking and data provenance;
+- Application portability for heterogeneous and homogeneous distributed computer systems.
+
+Accepted papers will be published by Springer-Verlag in the conference
+proceedings that will be indexed in Scopus and Web of Science.
+
+### Important dates
+
+~~March 20, 2016~~ - extended till April 10,2016: Submission deadline<br/>
+~~April 20, 2016~~ - extended till April 28, 2016: Notification of Acceptance and Early-bird Registration starts.<br/>
+May 15, 2016: Early-bird Registration ends.<br/>
+May 15, 2016: Submission deadline for the final version of the Papers<br/>
+July 4-7, 2016: ICCSA 2016 Conference
+
+### Paper submission
+
+To submit a paper, please connect to the submission site from the link provided
+at the ICCSA 2017 web site: <http://ess.iccsa.org>. Only papers submitted
+through the electronic system and strictly adhering to the relevant format will
+be considered for reviewing and publication.
+
+_The submission must fall into the following category: Scientific Computing Infrastructure (SCI 2016) workshop paper._
+
+The submitted paper must be between 10 to 16 pages long for LNCS publication
+and should be formatted according to the LNCS rules, respectively. Please
+consult the URL <http://www.iccsa.org/authors-instructions> for formatting
+information and templates. Each paper must deal with original and unpublished
+work, not submitted for publication elsewhere (copyright problems fall entirely
+under responsibility of the authors). Each paper will be reviewed by at least
+three experts in the relevant field, ensuring the publication of only top
+quality contributions.
+
+When a paper is accepted at least one of the authors has to register to the
+Conference and orally present the paper at the Workshop. Accepted papers will
+be published by Springer-Verlag in the Conference proceedings. Each participant
+will receive the electronic copy of all the proceeding volumes (LNCS) on a USB
+key. For a selected number of top quality papers, after the Conference, the
+authors will be requested to extend the paper in order to be published as
+special issues in Transactions on Computational Science.
+
+### Organization
+
+Prof. Dr. Alexander Bogdanov, {% protect_email bogdanov csa.ru %}<br/>
+Dr. Elena Stankova, {% protect_email elenastankova yandex.ru %}<br/>
+Dr. Vladimir Korkhov, {% protect_email vladimir csa.ru %}
+
+Saint-Petersburg State University, Russia
