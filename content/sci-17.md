@@ -43,7 +43,7 @@ proceedings that will be indexed in Scopus and Web of Science.
 
 ### Important dates
 
-March 6,2017: Submission deadline<br/>
+~~March 6,2017~~ extended till April 10, 2017: Submission deadline<br/>
 April 28, 2017: Notification of Acceptance and Early-bird Registration starts.<br/>
 May 15, 2017: Early-bird Registration ends.<br/>
 May 15, 2017: Submission deadline for the final version of the Papers<br/>
@@ -79,6 +79,6 @@ special issues in Transactions on Computational Science.
 
 Prof. Dr. Alexander Bogdanov, {% protect_email bogdanov csa.ru %}<br/>
 Dr. Elena Stankova, {% protect_email elenastankova yandex.ru %}<br/>
-Dr. Vladimir Korkhov, {% protect_email vladimir csa.ru %}
+Dr. Vladimir Korkhov, {% protect_email v.korkhov spbu.ru %}
 
 Saint-Petersburg State University, Russia
