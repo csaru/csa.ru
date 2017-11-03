@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+awards="$PWD/_data/awards.yml"
+cd content/awards
+ls *.png *.jpg | grep -v '^thumb' |
+sort -t'-' -n -k2 |
+while read filename; do
+	if ! test -f thumb.$filename
+	then
+		convert -thumbnail x200 $filename thumb.$filename
+	fi
+	convert thumb.$filename -ping -format "- filename: $filename\n  width: %w\n  height: %h\n" info:
+done > $awards
