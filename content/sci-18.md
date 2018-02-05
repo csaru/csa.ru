@@ -27,7 +27,7 @@ The objective of the workshop is to show modern techniques on constructing such 
 
 ### Topics 
 
-The topics of the SCI’17 workshop include but are not limited to:
+The topics of the SCI’18 workshop include but are not limited to:
 
 - Distributed, grid and cloud information systems;
 - Distributed system and application performance monitoring;
@@ -43,20 +43,20 @@ proceedings that will be indexed in Scopus and Web of Science.
 
 ### Important dates
 
-~~March 6,2017~~ extended till April ~~10~~ 17, 2017: Submission deadline<br/>
-April 28, 2017: Notification of Acceptance and Early-bird Registration starts.<br/>
-May 15, 2017: Early-bird Registration ends.<br/>
-May 15, 2017: Submission deadline for the final version of the Papers<br/>
-July 3-6, 2017: ICCSA 2017 Conference
+March 5, 2018: Submission deadline<br/>
+April 8, 2018: Notification of Acceptance and Early-bird Registration starts.<br/>
+May 6, 2018: Early-bird Registration ends.<br/>
+May 6, 2018: Submission deadline for the final version of the Papers<br/>
+July 2-5, 2018: ICCSA 2018 Conference
 
 ### Paper submission
 
 To submit a paper, please connect to the submission site from the link provided
-at the ICCSA 2017 web site: <http://ess.iccsa.org>. Only papers submitted
+at the ICCSA 2018 web site: <http://ess.iccsa.org>. Only papers submitted
 through the electronic system and strictly adhering to the relevant format will
 be considered for reviewing and publication.
 
-_The submission must fall into the following category: Scientific Computing Infrastructure (SCI 2017) workshop paper._
+_The submission must fall into the following category: Scientific Computing Infrastructure (SCI 2018) workshop paper._
 
 The submitted paper must be between 10 to 16 pages long for LNCS publication
 and should be formatted according to the LNCS rules, respectively. Please
@@ -77,7 +77,6 @@ special issues in Transactions on Computational Science.
 
 ### Organization
 
-Prof. Dr. Alexander Bogdanov, {% protect_email bogdanov csa.ru %}<br/>
 Dr. Elena Stankova, {% protect_email elenastankova yandex.ru %}<br/>
 Dr. Vladimir Korkhov, {% protect_email v.korkhov spbu.ru %}
 
