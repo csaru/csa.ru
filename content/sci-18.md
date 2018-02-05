@@ -11,7 +11,7 @@ real_lang: en
 identifier: apmath
 ---
 
-Held in conjunction with **the 18<sup>th</sup>International Conference on Computational Science and Its Applications (ICCSA 2017)**<br/>
+Held in conjunction with **the 18<sup>th</sup>International Conference on Computational Science and Its Applications (ICCSA 2018)**<br/>
 Melbourne, Australia, July 2-5, 2018<br/>
 <http://www.iccsa.org/>
 
