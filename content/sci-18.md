@@ -60,7 +60,7 @@ _The submission must fall into the following category: Scientific Computing Infr
 
 The submitted paper must be between 10 to 16 pages long for LNCS publication
 and should be formatted according to the LNCS rules, respectively. Please
-consult the URL <http://www.iccsa.org/authors-instructions> for formatting
+consult the URL <http://www.iccsa.org/instructions-for-authors> for formatting
 information and templates. Each paper must deal with original and unpublished
 work, not submitted for publication elsewhere (copyright problems fall entirely
 under responsibility of the authors). Each paper will be reviewed by at least
